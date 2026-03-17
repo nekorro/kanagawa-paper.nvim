@@ -17,7 +17,7 @@ M.get = function(opts, palette)
 		},
 		ui = {
 			fg = palette.dragonWhite,
-			fg_dim = palette.dragonGray2,
+			fg_dim = palette.katanaGray,
 			fg_dimmer = palette.dragonBlack5,
 			fg_dark = palette.dragonBlack3,
 			fg_reverse = palette.dragonBlack2,
@@ -158,7 +158,7 @@ M.get = function(opts, palette)
 			red = palette.dragonRed,
 			green = palette.dragonGreen,
 			yellow = palette.dragonYellow,
-			blue = palette.dragonBlue5,
+			blue = palette.dragonBlue,
 			magenta = palette.dragonPink,
 			cyan = palette.dragonAqua,
 			white = palette.oldWhite,

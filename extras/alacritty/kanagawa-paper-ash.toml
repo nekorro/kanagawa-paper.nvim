@@ -14,14 +14,14 @@ text = '#181616'
 
 [colors.selection]
 background = '#393836'
-foreground = '#9e9b93'
+foreground = '#717C7C'
 
 [colors.normal]
 black = '#393836'
 red = '#c4746e'
 green = '#699469'
 yellow = '#c4b28a'
-blue = '#435965'
+blue = '#658594'
 magenta = '#a292a3'
 cyan = '#8ea49e'
 white = '#C8C093'

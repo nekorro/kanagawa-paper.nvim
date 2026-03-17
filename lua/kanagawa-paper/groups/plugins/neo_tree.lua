@@ -4,6 +4,7 @@ function M.get(colors, opts)
 	local theme = colors.theme
 
 	return {
+		NeoTreeFileName = { fg = theme.ui.fg },
 		NeoTreeNormal = { link = "NormalFloat" },
 		NeoTreeNormalNC = { link = "NormalFloat" },
 		NeoTreeFloatTitle = { fg = theme.ui.fg_reverse, bg = theme.accent.accent1, bold = true },
