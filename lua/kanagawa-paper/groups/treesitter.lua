@@ -97,7 +97,7 @@ function M.setup(colors, opts)
 		-- @comment                line and block comments
 		["@comment"] = { fg = theme.syn.comment },
 		-- @comment.documentation  comments documenting code
-		["@comment.documentation"] = { fg = theme.syn.docstring, italic = true },
+		["@comment.documentation"] = { fg = theme.syn.docstring, italic = false },
 		-- @comment.error          error-type comments (e.g. `ERROR`, `FIXME`)
 		["@comment.error"] = { fg = theme.ui.bg, bg = theme.diag.error, bold = true },
 		-- @comment.warning        warning-type comments (e.g. `WARNING`, `FIX`, `HACK`)
