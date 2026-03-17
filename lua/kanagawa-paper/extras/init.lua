@@ -42,6 +42,7 @@ function M.setup()
 	vim.o.background = "dark"
 
 	local themes = {
+		ash = "Ash",
 		ink = "Ink",
 		canvas = "Canvas",
 	}

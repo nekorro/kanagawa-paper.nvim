@@ -1,7 +1,7 @@
 ---@alias ColorSpec string RGB Hex string
 
 ---@class KanagawaConfig
----@field _theme? "auto" | "ink" | "canvas"
+---@field _theme? "auto" | "ash" | "ink" | "canvas"
 ---@field undercurl? boolean
 ---@field transparent? boolean
 ---@field gutter? boolean
@@ -10,7 +10,7 @@
 ---@field terminal_colors? boolean
 ---@field cache? boolean
 ---@field styles? {comment: vim.api.keyset.highlight, functions: vim.api.keyset.highlight, keyword: vim.api.keyset.highlight, statement: vim.api.keyset.highlight, type: vim.api.keyset.highlight,}
----@field colors? {palette: PaletteColors, theme: {ink: ThemeColors, canvas: ThemeColors}}
+---@field colors? {palette: PaletteColors, theme: {ash: ThemeColors, ink: ThemeColors, canvas: ThemeColors}}
 ---@field color_balance? table<string, ColorOffset>
 ---@field overrides? fun(colors: KanagawaColors): table<string, vim.api.keyset.highlight>
 ---@field all_plugins? boolean

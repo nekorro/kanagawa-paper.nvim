@@ -59,6 +59,7 @@ function M.setup(colors, opts)
 		["@lsp.typemod.variable.injected"] = { fg = theme.syn.variable },
 
 		["@lsp.typemod.function.readonly"] = { fg = theme.syn.fun, bold = true },
+		["@lsp.typemod.string.format"] = { fg = theme.syn.symbol },
 	}
 end
 

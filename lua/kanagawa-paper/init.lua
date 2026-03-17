@@ -14,6 +14,8 @@ function M.load(opts)
 
 	if opts._theme == "ink" then
 		theme_bg = "dark"
+	elseif opts._theme == "ash" then
+		theme_bg = "dark"
 	elseif opts._theme == "canvas" then
 		theme_bg = "light"
 	else -- auto
@@ -22,7 +24,12 @@ function M.load(opts)
 
 	if bg ~= theme_bg then
 		if vim.g.colors_name == "kanagawa-paper-" .. opts._theme then
-			opts._theme = bg == "light" and "canvas" or "ink"
+			if bg == "light" then
+				opts._theme = "canvas"
+			else
+				-- Keep ash if already using it, otherwise default to ink
+				opts._theme = (opts._theme == "ash") and "ash" or "ink"
+			end
 		else
 			vim.o.background = theme_bg
 		end
@@ -47,6 +54,9 @@ function M.load(opts)
 			vim.cmd.colorscheme("kanagawa-paper")
 		end, { desc = "Rebuild the cache for the current Kanagawa Paper theme" })
 	else
+		if vim.fn.filereadable(cache.file("ash")) == 1 then
+			cache.delete("ash")
+		end
 		if vim.fn.filereadable(cache.file("ink")) == 1 then
 			cache.delete("ink")
 		end

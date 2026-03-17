@@ -13,6 +13,9 @@ describe("no cache on disabled", function()
 	end)
 
 	it("on theme change", function()
+		vim.cmd.colorscheme("kanagawa-paper-ash")
+		assert.same(0, vim.fn.filereadable(vim.fn.stdpath("cache") .. "/kanagawa-paper-ash.json"))
+
 		vim.cmd.colorscheme("kanagawa-paper-ink")
 		assert.same(0, vim.fn.filereadable(vim.fn.stdpath("cache") .. "/kanagawa-paper-ink.json"))
 
@@ -28,6 +31,7 @@ describe("cache builds", function()
 	end)
 
 	after_each(function()
+		Cache.delete("ash")
 		Cache.delete("ink")
 		Cache.delete("canvas")
 	end)
@@ -38,6 +42,9 @@ describe("cache builds", function()
 	end)
 
 	it("on theme change", function()
+		vim.cmd.colorscheme("kanagawa-paper-ash")
+		assert.same(1, vim.fn.filereadable(vim.fn.stdpath("cache") .. "/kanagawa-paper-ash.json"))
+
 		vim.cmd.colorscheme("kanagawa-paper-ink")
 		assert.same(1, vim.fn.filereadable(vim.fn.stdpath("cache") .. "/kanagawa-paper-ink.json"))
 

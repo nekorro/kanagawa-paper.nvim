@@ -3,6 +3,7 @@ local M = {}
 ---@class KanagawaConfig
 M.defaults = {
 	-- (internal) theme variant to use:
+	-- "ash" : dark theme
 	-- "ink" : dark theme
 	-- "canvas" : light theme
 	-- "auto" : automatically set theme based on background color
@@ -26,7 +27,7 @@ M.defaults = {
 
 	styles = {
 		-- style for comments
-		comment = { italic = true },
+		comment = { italic = false },
 		-- style for functions
 		functions = { italic = false },
 		-- style for keywords
@@ -40,12 +41,14 @@ M.defaults = {
 	colors = {
 		palette = {},
 		theme = {
+			ash = {},
 			ink = {},
 			canvas = {},
 		},
 	},
 	-- adjust overall color balance for each theme [-1, 1]
 	color_balance = {
+		ash = { brightness = 0, saturation = 0 },
 		ink = { brightness = 0, saturation = 0 },
 		canvas = { brightness = 0, saturation = 0 },
 	},
