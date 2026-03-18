@@ -52,6 +52,7 @@ function M.setup(colors, opts)
 		["@attribute"] = { fg = theme.syn.attribute },
 		-- @attribute.builtin      builtin annotations (e.g. `@property` in Python)
 		-- @property               the key in key/value pairs
+		["@property"] = { fg = theme.syn.property },
 		--
 		-- @function               function definitions
 		-- @function.builtin       built-in functions

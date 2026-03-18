@@ -212,6 +212,7 @@
 ---@field special1 ColorSpec
 ---@field special2 ColorSpec
 ---@field special3 ColorSpec
+---@field property ColorSpec
 
 ---@class DiagnosticsElements
 ---@field error ColorSpec

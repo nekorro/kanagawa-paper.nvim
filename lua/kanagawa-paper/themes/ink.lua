@@ -116,6 +116,7 @@ M.get = function(opts, palette)
 			special1 = palette.dragonYellow,
 			special2 = palette.dragonRed,
 			special3 = palette.springViolet1,
+			property = "none",
 		},
 		vcs = {
 			added = palette.dragonGreen,

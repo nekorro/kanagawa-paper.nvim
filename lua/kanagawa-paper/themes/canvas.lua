@@ -115,6 +115,7 @@ M.get = function(opts, palette)
 			special1 = palette.canvasTeal1,
 			special2 = palette.canvasRed1,
 			special3 = palette.canvasViolet1,
+			property = "none",
 		},
 		vcs = {
 			added = palette.canvasGreen2,
