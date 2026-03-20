@@ -79,9 +79,8 @@ function M.setup(colors, opts)
 		-- Normal		Normal text.
 		Normal = { fg = theme.ui.fg, bg = not opts.transparent and theme.ui.bg or "NONE" },
 		-- NormalNC	Normal text in non-current windows.
-		NormalNC = { fg = theme.ui.fg_dimmer, bg = not opts.transparent and theme.ui.bg or "NONE" },
-		-- NormalNC = opts.dim_inactive and { fg = theme.ui.fg, bg = not opts.transparent and theme.ui.bg_dim or "NONE" }
-		-- 	or { link = "Normal" },
+		NormalNC = opts.dim_inactive and { fg = theme.ui.fg, bg = not opts.transparent and theme.ui.bg_dim or "NONE" }
+			or { link = "Normal" },
 		-- NormalFloat	Normal text in floating windows.
 		NormalFloat = { fg = theme.ui.float.fg, bg = theme.ui.float.bg },
 		-- FloatBorder	Border of floating windows.
