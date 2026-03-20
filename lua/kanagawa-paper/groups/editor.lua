@@ -26,7 +26,7 @@ function M.setup(colors, opts)
 		CursorLine = { bg = theme.ui.bg_cursorline },
 		CursorLineAlt = { bg = theme.ui.bg_cursorline_alt },
 		-- Directory	Directory names (and other special names in listings).
-		Directory = { fg = theme.syn.fun },
+		Directory = { fg = theme.accent.accent1 },
 		-- DiffAdd		Diff mode: Added line. |diff.txt|
 		DiffAdd = { bg = theme.diff.add_light },
 		-- DiffChange	Diff mode: Changed line. |diff.txt|

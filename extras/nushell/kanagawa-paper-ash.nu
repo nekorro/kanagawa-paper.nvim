@@ -8,13 +8,13 @@ export def main [] {
 
     return {
         binary: '#c4746e'
-        block: '#658594'
-        cell-path: '#C8C093'
+        block: '#435965'
+        cell-path: '#c5c9c5'
         closure: '#8ea49e'
-        custom: '#C8C093'
+        custom: '#c5c9c5'
         duration: '#c4b28a'
         float: '#cc928e'
-        glob: '#C8C093'
+        glob: '#c5c9c5'
         int: '#c4746e'
         list: '#8ea49e'
         nothing: '#c4746e'
@@ -38,21 +38,21 @@ export def main [] {
             } else if $in < 6wk {
                 '#8ea49e'
             } else if $in < 52wk {
-                '#658594'
+                '#435965'
             } else { 'dark_gray' }
         }
 
         filesize: {|e|
             if $e == 0b {
-                '#C8C093'
+                '#c5c9c5'
             } else if $e < 1mb {
                 '#8ea49e'
-            } else {{ fg: '#658594' }}
+            } else {{ fg: '#435965' }}
         }
 
         shape_and: { fg: '#c4746e' attr: 'b' }
         shape_binary: { fg: '#c4746e' attr: 'b' }
-        shape_block: { fg: '#658594' attr: 'b' }
+        shape_block: { fg: '#435965' attr: 'b' }
         shape_bool: '#698a9b'
         shape_closure: { fg: '#8ea49e' attr: 'b' }
         shape_custom: '#699469'
@@ -62,7 +62,7 @@ export def main [] {
         shape_external_resolved: '#698a9b'
         shape_externalarg: { fg: '#699469' attr: 'b' }
         shape_filepath: '#8ea49e'
-        shape_flag: { fg: '#658594' attr: 'b' }
+        shape_flag: { fg: '#435965' attr: 'b' }
         shape_float: { fg: '#cc928e' attr: 'b' }
         shape_garbage: { fg: '${fg.dim}' bg: '#c4746e' attr: 'b' } # Keeping red and white for garbage
         shape_glob_interpolation: { fg: '#8ea49e' attr: 'b' }
@@ -71,7 +71,7 @@ export def main [] {
         shape_internalcall: { fg: '#8ea49e' attr: 'b' }
         shape_keyword: { fg: '#c4746e' attr: 'b' }
         shape_list: { fg: '#8ea49e' attr: 'b' }
-        shape_literal: '#658594'
+        shape_literal: '#435965'
         shape_match_pattern: '#699469'
         shape_matching_brackets: { attr: 'u' }
         shape_nothing: '#c4746e'
@@ -79,27 +79,27 @@ export def main [] {
         shape_or: { fg: '#c4746e' attr: 'b' }
         shape_pipe: { fg: '#c4746e' attr: 'b' }
         shape_range: { fg: '#c4b28a' attr: 'b' }
-        shape_raw_string: { fg: '#C8C093' attr: 'b' }
+        shape_raw_string: { fg: '#c5c9c5' attr: 'b' }
         shape_record: { fg: '#8ea49e' attr: 'b' }
         shape_redirection: { fg: '#c4746e' attr: 'b' }
         shape_signature: { fg: '#699469' attr: 'b' }
         shape_string: '#699469'
         shape_string_interpolation: { fg: '#8ea49e' attr: 'b' }
-        shape_table: { fg: '#658594' attr: 'b' }
-        shape_vardecl: { fg: '#658594' attr: 'u' }
+        shape_table: { fg: '#435965' attr: 'b' }
+        shape_vardecl: { fg: '#435965' attr: 'u' }
         shape_variable: '#c4746e'
 
         foreground: '#c5c9c5'
         background: '#181616'
         cursor: '#c4b28a'
 
-        empty: '#658594'
+        empty: '#435965'
         header: { fg: '#699469' attr: 'b' }
         hints: '#717C7C'
         leading_trailing_space_bg: { attr: 'n' }
         row_index: { fg: '#699469' attr: 'b' }
-        search_result: { fg: '#c4746e' bg: '#C8C093' }
-        separator: '#C8C093'
+        search_result: { fg: '#c4746e' bg: '#c5c9c5' }
+        separator: '#c5c9c5'
     }
 }
 

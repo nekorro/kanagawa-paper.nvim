@@ -5,11 +5,11 @@
 # -----------------------------------------------------------------------------
 colors:
   background_color: '181616'
-  white: 'C8C093'
+  white: 'c5c9c5'
   red: 'c4746e'
   green: '699469'
   yellow: 'c4b28a'
-  blue: '658594'
+  blue: '435965'
   pink: 'a292a3'
   cyan: '8ea49e'
 
