@@ -41,7 +41,7 @@ M.get = function(opts, palette)
 			special = palette.dragonAqua,
 			nontext = palette.dragonBlack6,
 			whitespace = palette.dragonBlack6,
-			win_separator = palette.dragonViolet,
+			win_separator = palette.katanaGray,
 			indent = palette.dragonBlack5,
 			indent_scope = palette.dragonViolet,
 			picker = palette.dragonRed,
@@ -69,10 +69,10 @@ M.get = function(opts, palette)
 				bg_thumb = palette.dragonBlack6,
 			},
 			float = {
-				fg = palette.oldWhite,
-				bg = palette.dragonBlack4,
-				fg_border = palette.dragonBlack5,
-				bg_border = palette.dragonBlack4,
+				fg = palette.dragonWhite,
+				bg = palette.dragonBlack3,
+				fg_border = palette.katanaGray,
+				bg_border = palette.dragonBlack3,
 			},
 		},
 		accent = {

@@ -12,6 +12,9 @@ function M.get(colors, opts)
 		SnacksPickerListCursorLine = { link = "CursorLineAlt" },
 		SnacksPickerPreviewCursorLine = { link = "CursorLineAlt" },
 		SnacksPickerMatch = { link = "Search" },
+		SnacksPickerFile = { fg = theme.ui.fg },
+		SnacksPickerDirectory = { fg = theme.accent.accent1 },
+		SnacksPickerIcon = { fg = theme.accent.accent1 },
 	}
 end
 
